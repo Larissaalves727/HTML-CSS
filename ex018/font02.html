@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte Externas</title>
+    <style>
+        @font-face {
+            font-family: bubble;
+            src: url('game_bubble/Game\ Bubble.otf') format('opentype'), url("game_bubble/Game\ Bubble.ttf") format(truetype);
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                - Opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                -svg
+            */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(171, 238, 255);
+        }
+        h1{
+            font-family: 'bubble', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+            color: rgb(6, 93, 143)
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque id modi sequi necessitatibus animi corrupti temporibus beatae! Alias fuga non quidem, similique vitae, incidunt, ducimus odio veritatis maiores vel aliquam!</p>
+</body>
+</html>
