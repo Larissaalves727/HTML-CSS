@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-    <menu>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">
+        menu
+    </span>
+    <menu id="itens">
         <ul>
             <li><a href="#">Opção 1</a></li>
             <li><a href="#">Opção 2</a></li>
@@ -26,12 +30,22 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, error distinctio similique, laborum tempora earum obcaecati eveniet a magnam reprehenderit dolorum consequuntur ad itaque et ex maiores. Perferendis, quidem ea!
             </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus dolores voluptatem perferendis, alias voluptas necessitatibus, eligendi omnis consequuntur impedit excepturi, eum tempora itaque. Quae magnam ut autem at nemo?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et corporis a nemo, deleniti velit obcaecati tempore perferendis, numquam, cum praesentium recusandae? Unde pariatur dolores quis placeat saepe natus excepturi asperiores!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et corporis a nemo, deleniti velit obcaecati tempore perferendis, numquam, cum praesentium recusandae? Unde pariatur dolores quis placeat saepe natus excepturi asperiores!66
             </p>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus blanditiis obcaecati alias, veniam voluptatem tenetur. Minima mollitia, tempore voluptates blanditiis quam voluptas! Quo similique impedit ab, dignissimos nobis iste aliquid!
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magnam sed nemo in expedita, dolorum praesentium aperiam iure aspernatur laborum dolore eaque quis. Minima laboriosam illum quibusdam veniam et illo?
             </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block'){
+                itens.style.display ='none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
