@@ -20,21 +20,38 @@ header{
     background-color: gray;
     color: white;
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
-
-nav > a {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 7px;
-    border-radius: 4px;
+header > h1 {
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
 }
 
-nav > a:hover{
+header > nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+}
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover{
     background-color: white;
     color: black;
+    transition: background-color .5s;
 }
 
 main {
@@ -42,5 +59,5 @@ main {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);
 }
